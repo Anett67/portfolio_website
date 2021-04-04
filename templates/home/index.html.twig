@@ -4,6 +4,14 @@
 
 {% block body %}
 
-    <h1>HomePage</h1>
+    {% include "/home/sections/header.html.twig" %}
+
+    {% include "/home/sections/projects.html.twig" %}
+
+    {% include "/home/sections/presentation.html.twig" %}
+
+    {% include "/home/sections/competences.html.twig" %}
+
+    {% include "/home/sections/contact.html.twig" %}
 
 {% endblock %} 
