@@ -21,10 +21,10 @@
         box-shadow: 0 0 1px $gold;
     }
     
-    input:checked + .slider:before {
-        -webkit-transform: translateX(26px);
-        -ms-transform: translateX(26px);
-        transform: translateX(26px);
+    input:checked + .slider > .icon {
+        -webkit-transform: translateX(28px);
+        -ms-transform: translateX(28px);
+        transform: translateX(28px);
     }
 
     /* The slider */
@@ -39,9 +39,8 @@
         -webkit-transition: .4s;
         transition: .4s;
 
-        &:before {
+        .icon {
             position: absolute;
-            content: "";
             height: 24px;
             width: 24px;
             left: 4px;
@@ -49,13 +48,24 @@
             background-color: white;
             -webkit-transition: .4s;
             transition: .4s;
+            border-radius: 50%;
+            color: black;
+
+            .sun-icon,
+            .moon-icon{
+                width: 14px;
+            }
+
+            .sun-icon{
+                display: none;
+            }
         }
 
         /* Rounded sliders */
         &.round {
             border-radius: 34px;
 
-            &:before{
+            .icon{
                 border-radius: 50%;
             }
         }
