@@ -15,6 +15,21 @@ h1{
     text-align: center;
 }
 
+h2{
+   font-family: 'Hind-Bold';
+   color: $blockTitleColor;
+   font-size: 76px;
+   position: relative;
+    span{
+        color: $textColor;
+        font-size: 20px;
+        position: absolute;
+        left: 4px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
 .header-subtitle{
     text-align: center;
     font-size: 22px;
@@ -52,6 +67,18 @@ h1{
     
     &:hover{
         text-decoration: none;
+    }
+}
+
+.section-title{
+    height: 250px;
+}
+
+.block-title{
+    .horizontal-line{
+        height: 3px;
+        width: 41px;
+        background-color: $gold;
     }
 }
 
