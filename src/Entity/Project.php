@@ -54,6 +54,11 @@ class Project
      */
     private $technologies;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $subtitle;
+
     public function __construct()
     {
         $this->technologies = new ArrayCollection();
@@ -156,6 +161,18 @@ class Project
     public function removeTechnology(Technology $technology): self
     {
         $this->technologies->removeElement($technology);
+
+        return $this;
+    }
+
+    public function getSubtitle(): ?string
+    {
+        return $this->subtitle;
+    }
+
+    public function setSubtitle(string $subtitle): self
+    {
+        $this->subtitle = $subtitle;
 
         return $this;
     }
