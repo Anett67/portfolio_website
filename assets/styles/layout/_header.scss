@@ -2,5 +2,19 @@ header{
     min-height: 100vh;
     background-color: $dark;
     color: white;
+
+    nav.navbar{
+        padding: 0 3%;
+        height: 80px;
+        ul.navbar-nav{
+            width: 40%;
+        }
+    }
+
+    .social-media{
+        a img{
+            width: 25px;
+        }
+    }
   
 }
