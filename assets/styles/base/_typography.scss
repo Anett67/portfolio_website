@@ -1,0 +1,9 @@
+@include font-face("Hind-Bold", "../../fonts/Hind-Bold");
+@include font-face("Hind-Light", "../../fonts/Hind-Light");
+@include font-face("Hind-Medium", "../../fonts/Hind-Medium");
+@include font-face("Hind-Regular", "../../fonts/Hind-Regular");
+@include font-face("Hind-SemiBold", "../../fonts/Hind-SemiBold");
+
+body{
+    font-family: 'Hind-Regular';
+}
