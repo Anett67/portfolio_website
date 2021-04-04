@@ -1,10 +1,20 @@
-<section id="projects" class="container">
+<section id="projects">
 
-    <div class="section-title block-title d-flex align-items-center">
+    <div class="container section-title block-title d-flex align-items-center">
         <div class="horizontal-line mr-4"></div>
         <h2 class="m-0 text-uppercase">Projets
             <span>Mes Projets</span>
         </h2>   
+    </div>
+
+    <div class="projects-section row">
+    
+        {% for project in projects %}
+            
+            <div class="col-6">{{ project.title }}</div>
+
+        {% endfor %}
+    
     </div>
 
 </section>
