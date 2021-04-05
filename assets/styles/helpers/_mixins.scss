@@ -13,4 +13,10 @@
              transform: translateY(-50%);
          }
      }
+
+     .horizontal-line{
+        height: 3px;
+        width: 41px;
+        background-color: $gold;
+    }
 }

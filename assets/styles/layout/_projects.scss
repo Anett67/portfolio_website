@@ -1,6 +1,7 @@
 .single-project-block{
-    height: 25vw;
+    height: 20vw;
     background-color: $grey;
+    overflow: hidden;
 
     &:nth-child(even){
         flex-direction: row-reverse;
@@ -13,7 +14,10 @@
     }
 
     .project-info-block{
-        padding-top: 5vw;
+        padding: 4vw;
 
+        .buttons{
+           margin-top: 2vw;
+        }
     }
 }

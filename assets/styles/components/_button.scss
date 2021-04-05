@@ -1,0 +1,29 @@
+.button{
+    padding: 2px 20px;
+    border: 1px solid $gold;
+    margin: 0 5px;
+    transition: all .3s;
+
+    &:hover{
+        text-decoration: none;
+    }
+
+    &--outlined{
+        color: $gold;
+
+        &:hover{
+            color: white;
+            background-color: $gold;
+        }
+    }
+
+    &--gold{
+        background-color: $gold;
+        color: white;
+
+        &:hover{
+            color: $gold;
+            background-color: transparent;
+        }
+    }
+}
