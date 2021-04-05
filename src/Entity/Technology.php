@@ -25,11 +25,6 @@ class Technology
     private $name;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
-    private $percentage_level;
-
-    /**
      * @ORM\ManyToMany(targetEntity=Project::class, mappedBy="technologies")
      */
     private $projects;
