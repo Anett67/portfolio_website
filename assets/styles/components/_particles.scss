@@ -1,0 +1,31 @@
+$gradients: linear-gradient(to right, #FF5C31, #FF0061), 
+            linear-gradient(to right, #2D3B4A, #1F2730), 
+            linear-gradient(to right, #E68903, #FFD450), 
+            linear-gradient(to right, #05AD6B, #17C6B7), 
+            linear-gradient(to right, #4932D2, #866FEA);
+
+
+@for $i from 1 through 15 {
+    @keyframes particle-animation-#{$i} {
+      100% {
+        transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+      }
+    }
+
+    .particle:nth-child(#{$i}) {
+      animation: particle-animation-#{$i} 60s infinite;
+      $size: random(150) + 5 + px;
+      height: $size;
+      width: $size;
+      opacity: 1;
+      background: nth($gradients, random(5));
+      animation-delay: -$i * .4s;
+      transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+    }
+  }
+  
+  .particle {
+    position: absolute;
+    border-radius: 50%;
+}
+  

@@ -11,8 +11,6 @@ import './styles/app.scss';
 import $ from 'jquery';
 import 'bootstrap';
 
-import './particles.js';
-
 // start the Stimulus application
 import './bootstrap';
 
