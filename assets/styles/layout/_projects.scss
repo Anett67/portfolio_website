@@ -1,0 +1,19 @@
+.single-project-block{
+    height: 25vw;
+    background-color: $grey;
+
+    &:nth-child(even){
+        flex-direction: row-reverse;
+        background-color: white;
+    }
+
+    .image-block{
+        background-size: cover;
+        background-position: center;
+    }
+
+    .project-info-block{
+        padding-top: 5vw;
+
+    }
+}

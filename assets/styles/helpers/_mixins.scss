@@ -1,0 +1,16 @@
+@mixin titleH2 ($color, $sizeBack, $sizeFront) {
+    h2{
+        font-family: 'Hind-Bold';
+        color: $color;
+        font-size: $sizeBack;
+        position: relative;
+         span{
+             color: $textColor;
+             font-size: $sizeFront;
+             position: absolute;
+             left: 4px;
+             top: 50%;
+             transform: translateY(-50%);
+         }
+     }
+}
