@@ -13,14 +13,14 @@ $gradients: linear-gradient(to right, #FF5C31, #FF0061),
     }
 
     .particle:nth-child(#{$i}) {
-      animation: particle-animation-#{$i} 60s infinite;
-      $size: random(150) + 5 + px;
-      height: $size;
-      width: $size;
-      opacity: 1;
-      background: nth($gradients, random(5));
-      animation-delay: -$i * .4s;
-      transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+        animation: particle-animation-#{$i} 60s infinite;
+        $size: random(80) + 5 + px;
+        height: $size;
+        width: $size;
+        opacity: 1;
+        background: nth($gradients, random(5));
+        animation-delay: -$i * .4s;
+        transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
     }
   }
   
