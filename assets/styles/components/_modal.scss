@@ -17,4 +17,8 @@
     &__info{
         padding: 3% 3% 5% 5%;
     }
+
+    .technologies :not(:last-child)::after{
+        content: ', ';
+    }
 }

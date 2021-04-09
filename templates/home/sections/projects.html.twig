@@ -62,7 +62,15 @@
 
                                 <p class="mb-5 mt-2">{{ project.subtitle }}</p>
                                 
-                                <p class="mb-5">{{ project.description }}</p>
+                                <p class="mb-4">{{ project.description }}</p>
+                                
+                                <h3 class="technologies">Langages et technologies</h3>
+
+                                <div class="technologies mb-5">
+                                    {% for techno in project.technologies %}
+                                        <span class="techno">{{ techno.name }}</span>
+                                    {% endfor %}
+                                </div>
 
                                 <a href="{{ project.url }}" target="_blank" type="button" class="button button--outlined" data-dismiss="modal">Voir le site</a>
                                 {% if project.github %}

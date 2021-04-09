@@ -15,6 +15,12 @@ h1{
     text-align: center;
 }
 
+h3.technologies{
+    color: $textColor;
+    font-size: 16px;
+    font-family: 'Hind-SemiBold';
+}
+
 p{
     font-size: 14px;
     font-family: 'Hind-SemiBold';
@@ -75,8 +81,6 @@ a{
     @include titleH2($blockTitleColor, 76px, 20px);
 }
 
-
-
 .single-project-block .project-info-block,
 .modal-content {
 
@@ -89,9 +93,13 @@ a{
 }
 
 .single-project-block:nth-child(odd) .project-info-block .block-title{
-     @include titleH2(white, 70px, 16px);
+    @include titleH2(white, 70px, 16px);
 }
 
+span.techno{
+    font-family: 'Hind-Medium';
+    font-size: 14px;
+}
 
 
 
