@@ -3,6 +3,19 @@
     border: 1px solid $gold;
     margin: 0 5px;
     transition: all .3s;
+    text-align: center;
+
+    @include respond(tab-port){
+        margin: 1vw 0;
+        width: 23vw;
+        min-width: 182px;
+        padding: 8px 20px;
+    }
+
+    @include respond(tab-sm){
+        margin: .8vw 0;
+        padding: .5vw 0;
+    }
 
     &:hover{
         text-decoration: none;

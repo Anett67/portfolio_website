@@ -1,9 +1,38 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media(max-width: 600px){
+            @content
+        };
+    }
+    @if $breakpoint == tab-sm {
+        @media(max-width: 700px){ 
+            @content
+        };
+    }
+    @if $breakpoint == tab-port {
+        @media(max-width: 991px){ 
+            @content
+        };
+    }
+    @if $breakpoint == tab-land {
+        @media(max-width: 1200px){ 
+            @content
+        };
+    }
+    @if $breakpoint == big-desktop {
+        @media(min-width: 1800px){  
+            @content
+        };
+    }
+}
+
 @mixin titleH2 ($color, $sizeBack, $sizeFront) {
     h2{
         font-family: 'Hind-Bold';
         color: $color;
         font-size: $sizeBack;
         position: relative;
+        min-width: 50%;
          span{
              color: $textColor;
              font-size: $sizeFront;
@@ -12,6 +41,10 @@
              top: 50%;
              transform: translateY(-50%);
          }
+
+        @include respond(tab-port){
+            font-size: 50px;
+        }
      }
 
      .horizontal-line{
@@ -21,25 +54,3 @@
     }
 }
 
-@mixin respond($breakpoint) {
-    @if $breakpoint == phone {
-        @media(max-width: 600px){ //600px
-            @content
-        };
-    }
-    @if $breakpoint == tab-port {
-        @media(max-width: 991px){  //900px
-            @content
-        };
-    }
-    @if $breakpoint == tab-land {
-        @media(max-width: 1200px){ //1200px
-            @content
-        };
-    }
-    @if $breakpoint == big-desktop {
-        @media(min-width: 1800px){  //1800px
-            @content
-        };
-    }
-}
