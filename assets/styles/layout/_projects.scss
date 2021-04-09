@@ -11,6 +11,10 @@
         height: 45vw;
     }
 
+    @include respond(phone){
+        height: auto;
+    }
+
     &:nth-child(even){
         flex-direction: row-reverse;
         background-color: white;
@@ -19,6 +23,10 @@
     .image-block{
         background-size: cover;
         background-position: center;
+
+        @include respond(phone){
+            height: 40vw;
+        }
     }
 
     .project-info-block{
@@ -42,6 +50,10 @@
 
            @include respond(tab-sm){
                margin-top: 2vw;
+           }
+
+           @include respond(phone){
+               margin-left: 0;
            }
         }
     }

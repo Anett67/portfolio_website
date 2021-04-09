@@ -17,6 +17,12 @@
         padding: .5vw 0;
     }
 
+    @include respond(phone){
+        width: 100%;
+        font-size: 20px;
+        padding: 1.2vw 0;
+    }
+
     &:hover{
         text-decoration: none;
     }
